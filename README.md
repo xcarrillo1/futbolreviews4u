@@ -1,5 +1,5 @@
 # **FutbolReviews4U**
-<div style="text-align: justify"> This app allows users to create, read, update, and delete reviews of professional players. Users input an image of the player, the team the player plays on, nationality, a rating out of 5, their review, and their own name to show up next to the review. Users are allowed to sign in and create their own account. </div>
+<div style="text-align: justify"> This app allows users to create, read, update, and delete reviews of professional soccer players. Users input an image of the player, the team the player plays on, nationality, a rating out of 5, their review, and their own name to show up next to the review. Users are allowed to sign in and create their own account. </div>
 
 ## Technologies Used:
 - HTML
