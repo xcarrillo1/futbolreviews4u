@@ -11,7 +11,7 @@
 - Imgur
 
 ## Screenshots:
-These screenshots show a quick sketch of what the app look on mobile and desktop.
+These screenshots show a quick sketch of what the app looks while the user navigates through it.
 
 ![FutbolReviews4U wireframe](images/WireFrame.png)
 
