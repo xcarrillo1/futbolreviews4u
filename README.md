@@ -13,7 +13,7 @@
 ## Screenshots:
 These screenshots show a quick sketch of what the app look on mobile and desktop.
 
-![FutbolReviews4U wireframe]()
+![FutbolReviews4U wireframe](images/WireFrame.png)
 
 ## Getting Started:
 [Click here](https://pick-your-poison1.vercel.app/) to check the app out! NEED TO CHANGE LINK
