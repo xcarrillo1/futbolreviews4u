@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FutbolReviews4U</title>
+	</head>
+	<body>
+		<h1>New Review Page</h1>
+		<form action="/players" method="POST">
+            Image: <input type="tex" name="img" placeholder="URL" /><br />
+			Name: <input type="text" name="name" placeholder="Name" /><br />
+            Country: <input type="text" name="country" placeholder="Country" /><br />
+            Team: <input type="text" name="team" placeholder="Team" /><br />
+            Position: <input type="text" name="position" placeholder="Position" /><br />
+            Rating: <input type="text" name="rating" placeholder="Rating" /><br />
+			Review: <textarea name="review" placeholder="Tell us about this player!"></textarea>
+            Author: <input type="text" name="author" placeholder="Your Name"><br/>
+			<input type="submit" name="" value="Add Review"/>
+		</form>
+        <br/>
+		<a href="/players">Back to Home</a>
+	</body>
+</html>
