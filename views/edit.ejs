@@ -14,6 +14,7 @@
         Country: <input type="text" name="country" value="<%=player.country%>">
         Team: <input type="text" name="team" value="<%=player.team%>">
         Position: <input type="text" name="position" value="<%=player.position%>">
+        Retired: <input type="checkbox" name="retired" <% if(player.retired === true){ %> checked <% } %> />
         Rating: <input type="text" name="rating" value="<%=player.rating%>">
         Review: <textarea name="review"></textarea>
         Author: <input type="text" name="author" value="<%=player.author%>">

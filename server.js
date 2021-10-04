@@ -57,6 +57,11 @@ app.delete("/players/:id", (req, res) => {
 
 // Update
 app.put("/players/:id", (req, res) => {
+  if (req.body.retired === 'on') {
+		req.body.retired = true;
+	} else {
+		req.body.retired = false;
+	}
   Player.findByIdAndUpdate(req.params.id, req.body, {
     new: true
   }, (error, updatedPlayer) => {
@@ -66,6 +71,11 @@ app.put("/players/:id", (req, res) => {
 
 // Create
 app.post("/players", (req, res) => {
+  if(req.body.retired === "on") {
+    req.body.retired = true;
+} else {
+    req.body.retired = false;
+}
   Player.create(req.body, (error, createdPlayer) => {
     res.redirect("/players");
   });
