@@ -9,8 +9,9 @@
 </head>
 <body>
     <nav>
-        <a href="/players">Back to Home</a>
+        <a id="backhome" href="/players">Back to Home</a>
     </nav>
+    <div id="show-main">
         <img src="<%=player.img%>"/>
         <h1><%=player.name%></h1>
         <p>Country: <%=player.country%></p>
@@ -20,5 +21,9 @@
         <p>Rating (out of 5): <%=player.rating%></p>
         <p>Review: <%=player.review%></p>
         <p>Author: <%=player.author%></p>
+    </div>
+    <footer>
+        <center><p class="footer"><strong>⚽️ FutbolReviews4U ⚽️</strong></p></center>
+    </footer>
 </body>
 </html>

@@ -6,16 +6,27 @@
 * {
     cursor: url("https://i.imgur.com/lBJM4e1.png"), auto;
     background-color: #8ee4af;;
+    
 }
+
 
 /* INDEX */
 #soccerballgif {
     width: 100px;
     height: auto;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
 }
 
 h1 {
     font-family: "JetBrains Mono", sans-serif;
+}
+
+nav {
+    text-align: center;
 }
 
 nav li {
@@ -40,6 +51,14 @@ nav li a:hover {
 
 #createReview:hover {
     background-color: #edf5e1 ;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #playerImage {
@@ -71,23 +90,33 @@ nav li a:hover {
     color: black;
 }
 
-/* SHOW */
-
-
-/* CREATE */
-
-/* EDIT */
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px 0;
-    background-color: rgb(116, 132, 146);
-    max-width: fit-content;
-    max-height: fit-content;
+/* BACK HOME LINK */
+#backhome {
+    font-family: "Sora", sans-serif;
+    text-decoration: none;
+    color: #05386b;
 }
 
-textarea {
-    resize: none;
-    height: 75px;
-  }
+#backhome:hover {
+    background-color: #edf5e1 ;
+}
+
+/* SHOW */
+#show-main {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* CREATE */
+/* check other css file */
+
+/* EDIT */
+  #editbutton {
+    font-family: "Hahmlet", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#editbutton:hover {
+    background-color: #05386b;
+}

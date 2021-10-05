@@ -4,36 +4,65 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/stylec.css" type="text/css">
 		<link href="/style.css" rel="stylesheet" type="text/css">
 		<title>FutbolReviews4U</title>
 	</head>
 	<body>
-		<h1>New Review Page</h1>
-		<form action="/players" method="POST">
-            Image: <input type="tex" name="img" placeholder="URL" /><br />
-			Name: <input type="text" name="name" placeholder="Name" /><br />
-            Country: <input type="text" name="country" placeholder="Country" /><br />
-            Team: <input type="text" name="team" placeholder="Team" /><br />
-            Position: <select name="position">
-						<option value="GK">Goalkeeper</option>
-						<option value="D">Defense</option>
-						<option value="M">Midfielder</option>
-						<option value="F">Forward</option>
-					  </select>
-			Retired: <input type="checkbox" name="retired"/> <br/>
-            Rating (out of 5): <select name="rating">
-						<option value="1">⭐️</option>
-						<option value="2">⭐️⭐️</option>
-						<option value="3">⭐️⭐️⭐️</option>
-						<option value="4">⭐️⭐️⭐️⭐️</option>
-						<option value="5">⭐️⭐️⭐️⭐️⭐️</option>
-					</select>
-			Review: <textarea name="review" placeholder="Tell us about this player!"></textarea>
-            Author: <input type="text" name="author" placeholder="Your Name"><br/>
-			<input type="submit" name="" value="Add Review"/>
-		</form>
-        <br/>
-		<a href="/players">Back to Home</a>
+		<nav>
+			<a id="backhome" href="/players">Back to Home</a>
+		</nav>
+		<center><h1>Create a New Review</h1></center>
+		<div class="container-new">
+			<form action="/players" method="POST">
+				<fieldset>
+					<legend>PLAYER INFO</legend>
+						<label for="img">IMAGE</label>
+						<input type="text" name="img" id="img" placeholder="URL">
+
+						<label for="name">NAME</label>
+						<input type="text" name="name" id="name" placeholder="Name">
+
+						<label for="country">COUNTRY</label>
+						<input type="text" name="country" id="country" placeholder="Country">
+
+						<label for="team">TEAM</label>
+						<input type="text" name="team" id="team" placeholder="Team">
+
+						<label for="position">POSITION</label>
+						<select name="position" id="position">
+							<option value="GK">Goalkeeper</option>
+							<option value="D">Defense</option>
+							<option value="M">Midfielder</option>
+							<option value="F">Forward</option>
+						</select>
+
+						<label for="retired">RETIRED</label>
+						<select name="retired" id="retired">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+
+						<label for="rating">RATING</label>
+						<select name="rating" id="rating">
+							<option value="1">⭐️</option>
+							<option value="2">⭐️⭐️</option>
+							<option value="3">⭐️⭐️⭐️</option>
+							<option value="4">⭐️⭐️⭐️⭐️</option>
+							<option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+						</select>
+
+						<label for="review">REVIEW</label>
+						<input type="text" name="review" id="review" placeholder="Tell us about this player!"></input>
+
+						<label for="author">AUTHOR</label>
+						<input type="text" name="author" id="author" placeholder="Team">
+				</fieldset>
+				<input id="addreview" type="submit" name="" value="Add Review"/>
+			</form>
+		</div>
+		<footer>
+			<center><p class="footer"><strong>⚽️ FutbolReviews4U ⚽️</strong></p></center>
+		</footer>
 	</body>
 </html>
-

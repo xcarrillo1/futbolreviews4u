@@ -25,11 +25,6 @@ playerRouter.get('/' , (req, res) => {
   
   // Update
   playerRouter.put("/:id", (req, res) => {
-    if (req.body.retired === 'on') {
-          req.body.retired = true;
-      } else {
-          req.body.retired = false;
-      }
     Player.findByIdAndUpdate(req.params.id, req.body, {
       new: true
     }, (error, updatedPlayer) => {
@@ -39,11 +34,11 @@ playerRouter.get('/' , (req, res) => {
   
   // Create
   playerRouter.post("/", (req, res) => {
-    if(req.body.retired === "on") {
-      req.body.retired = true;
-  } else {
-      req.body.retired = false;
-  }
+  //   if(req.body.retired === "on") {
+  //     req.body.retired = true;
+  // } else {
+  //     req.body.retired = false;
+  // }
     Player.create(req.body, (error, createdPlayer) => {
       res.redirect("/players");
     });
