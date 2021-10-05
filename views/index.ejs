@@ -4,24 +4,38 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="/style.css" rel="stylesheet" type="text/css">
 		<title>FutbolReviews4U</title>
 	</head>
 	<body>
         <div class="main-container">
             <header>
-                <a href="/players/new">Create Review</a>
-                <h1>FutbolReviews4U</h1>  
+                <h1><img id="soccerballgif" src="https://i.imgur.com/PbhsyVs.gif">FutbolReviews4U<img id="soccerballgif" src="https://i.imgur.com/PbhsyVs.gif"></h1>
             </header>
+			<nav>
+				<ul>
+					<li><a href="https://www.premierleague.com/"target="_blank">Premier League</a></li>|
+					<li><a href="https://www.laliga.com/en-GB"target="_blank">LaLiga</a></li>|
+					<li><a href="https://www.legaseriea.it/it/"target="_blank">Serie A</a></li>|
+					<li><a href="https://www.ligue1.com/"target="_blank">Ligue 1</a></li>|
+					<li><a href="https://www.bundesliga.com/en/bundesliga"target="_blank">Bundesliga</a></li>
+				</ul>
+			</nav>
+			<img src="https://media.giphy.com/media/12Vujj7Zh7dTPy/giphy.gif"/>
             <div class="page-container">
+				<a href="/players/new" id="createReview">Create Review</a>
 			<% players.forEach(player => { %>
 				<h2><%=player.name%></h2>
-				<a href="/players/<%=player._id; %>"><img src="<%=player.img; %>"></a> <br/>
+				<a href="/players/<%=player._id; %>"><img id="playerImage" src="<%=player.img; %>"></a> <br/>
 				<a id="edit" href="/players/<%= player._id %>/edit">Edit this Review</a>
 				<form action="/players/<%=player.id; %>?_method=DELETE" method="POST">
 					<input type="submit" value="DELETE" />
 				</form>
 			<% }) %>
             </div>
+		<footer>
+			<center><p class="footer"><strong>⚽️ FutbolReviews4U ⚽️</strong></p></center>
+		</footer>
 		</div>
 	</body>
 </html>

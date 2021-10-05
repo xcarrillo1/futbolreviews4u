@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
+
+
+* {
+    cursor: url("https://i.imgur.com/lBJM4e1.png"), auto;
+    background-color: #8ee4af;;
+}
+
+/* INDEX */
+#soccerballgif {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+nav li {
+    display: inline;
+    padding: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #edf5e1;
+    color: #05386b;
+}
+
+#createReview {
+    font-family: "Sora", sans-serif;
+    text-decoration: none;
+    color: #05386b;
+}
+
+#createReview:hover {
+    background-color: #edf5e1 ;
+}
+
+#playerImage {
+    opacity:0.5;
+    transition: 1s ease; 
+}
+
+#playerImage:hover {
+    opacity:1;
+    transition: 1s ease;
+}
+
+#edit {
+    font-family: "Hahmlet", sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#edit:hover {
+    background-color: #05386b;
+}
+
+.page-container input {
+    transition-duration: 0.4s;
+}
+
+.page-container input:hover {
+    background-color:red;
+    color: black;
+}
+
+/* SHOW */
+
+
+/* CREATE */
+
+/* EDIT */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgb(116, 132, 146);
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+textarea {
+    resize: none;
+    height: 75px;
+  }

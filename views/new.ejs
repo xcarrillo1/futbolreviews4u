@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/style.css" rel="stylesheet" type="text/css">
 		<title>FutbolReviews4U</title>
 	</head>
 	<body>
@@ -13,9 +14,20 @@
 			Name: <input type="text" name="name" placeholder="Name" /><br />
             Country: <input type="text" name="country" placeholder="Country" /><br />
             Team: <input type="text" name="team" placeholder="Team" /><br />
-            Position: <input type="text" name="position" placeholder="Position" /><br />
+            Position: <select name="position">
+						<option value="GK">Goalkeeper</option>
+						<option value="D">Defense</option>
+						<option value="M">Midfielder</option>
+						<option value="F">Forward</option>
+					  </select>
 			Retired: <input type="checkbox" name="retired"/> <br/>
-            Rating: <input type="text" name="rating" placeholder="Rating" /><br />
+            Rating (out of 5): <select name="rating">
+						<option value="1">⭐️</option>
+						<option value="2">⭐️⭐️</option>
+						<option value="3">⭐️⭐️⭐️</option>
+						<option value="4">⭐️⭐️⭐️⭐️</option>
+						<option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+					</select>
 			Review: <textarea name="review" placeholder="Tell us about this player!"></textarea>
             Author: <input type="text" name="author" placeholder="Your Name"><br/>
 			<input type="submit" name="" value="Add Review"/>
@@ -24,3 +36,4 @@
 		<a href="/players">Back to Home</a>
 	</body>
 </html>
+

@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
     <title>FutbolReviews4U</title>
 </head>
 <body>
+    <a href="/players">Back to Home</a>
     <h1>Edit Review</h1>
-    <form action="/players/<%= player._id; %>?_method=PUT" method="POST">
-        Image: <input type="url" name="img" value="<%=player.img%>">
-        Name: <input type="text" name="name" value="<%=player.name%>">
-        Country: <input type="text" name="country" value="<%=player.country%>">
-        Team: <input type="text" name="team" value="<%=player.team%>">
-        Position: <input type="text" name="position" value="<%=player.position%>">
-        Retired: <input type="checkbox" name="retired" <% if(player.retired === true){ %> checked <% } %> />
-        Rating: <input type="text" name="rating" value="<%=player.rating%>">
-        Review: <textarea name="review"></textarea>
-        Author: <input type="text" name="author" value="<%=player.author%>">
-        <input type="submit" value="Submit Changes">
-    </form>
+    <fieldset>
+        <form action="/players/<%= player._id; %>?_method=PUT" method="POST">
+            <h4>Image:</h4> <input type="url" name="img" value="<%=player.img%>">
+            <h4>Name:</h4> <input type="text" name="name" value="<%=player.name%>">
+            <h4>Country:</h4> <input type="text" name="country" value="<%=player.country%>">
+            <h4>Team:</h4> <input type="text" name="team" value="<%=player.team%>">
+            <h4>Position:</h4> <input type="text" name="position" value="<%=player.position%>">
+            <h4>Retired:</h4> <input type="checkbox" name="retired" <% if(player.retired === true){ %> checked <% } %> />
+            <h4>Rating:</h4> <input type="text" name="rating" value="<%=player.rating%>">
+            <h4>Review:</h4> <textarea name="review" value="<%=player.review%>"></textarea>
+            <h4>Author:</h4> <input type="text" name="author" value="<%=player.author%>">
+            <input type="submit" value="Submit Changes">
+        </form>
+    </fieldset>
 </body>
 </html>
