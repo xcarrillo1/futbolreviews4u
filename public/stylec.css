@@ -42,7 +42,8 @@
     border-radius: 5px;
   }
 
-  #addreview:hover {
+#addreview:hover {
     background-color: #05386b;
     color:grey;
 }
+
