@@ -10,6 +10,7 @@
 <body>
     <center><a id="backhome" href="/players">Back to Home</a></center>
     <h1>Edit Review</h1>
+
     <fieldset>
         <form action="/players/<%= player._id; %>?_method=PUT" method="POST">
             <h4>Image:</h4> <input type="url" name="img" value="<%=player.img%>">
@@ -26,6 +27,7 @@
             <input id="editbutton" type="submit" value="Submit Changes">
         </form>
     </fieldset>
+    
     <footer>
         <center><p class="footer"><strong>⚽️ FutbolReviews4U ⚽️</strong></p></center>
     </footer>

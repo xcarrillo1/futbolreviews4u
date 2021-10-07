@@ -7,10 +7,11 @@
     <link href="/style.css" rel="stylesheet" type="text/css">
     <title>FutbolReview4U</title>
 </head>
-<body>
+<body id="showbody">
     <nav>
         <a id="backhome" href="/players">Back to Home</a>
     </nav>
+
     <div id="show-main">
         <img src="<%=player.img%>"/>
         <h1><%=player.name%></h1>
@@ -22,8 +23,9 @@
         <p>Review: <%=player.review%></p>
         <p>Author: <%=player.author%></p>
     </div>
+
     <footer>
-        <center><p class="footer"><strong>⚽️ FutbolReviews4U ⚽️</strong></p></center>
+        <p class="footer"><strong>⚽️ FutbolReviews4U ⚽️</strong></p>
     </footer>
 </body>
 </html>
