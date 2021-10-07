@@ -168,7 +168,7 @@ nav li a:hover {
 
 /* SHOW */
 #show-main {
-    /* text-align: center; */
+    align-items: center;
     margin-top: 20px;
 }
 
