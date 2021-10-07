@@ -8,11 +8,11 @@
     <title>FutbolReviews4U</title>
 </head>
 <body>
-    <center><a id="backhome" href="/players">Back to Home</a></center>
+    <center><a id="backhome" href="/">Back to Home</a></center>
     <h1>Edit Review</h1>
 
     <fieldset>
-        <form action="/players/<%= player._id; %>?_method=PUT" method="POST">
+        <form action="/<%= player._id; %>?_method=PUT" method="POST">
             <h4>Image:</h4> <input type="url" name="img" value="<%=player.img%>">
             <h4>Name:</h4> <input type="text" name="name" value="<%=player.name%>">
             <h4>Country:</h4> <input type="text" name="country" value="<%=player.country%>">

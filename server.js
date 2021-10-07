@@ -34,7 +34,7 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 // ROUTES - INDUCES / CONTROLLERS
 const PlayersController = require("./controllers/player.js");
-app.use("/players", PlayersController);
+app.use("/", PlayersController);
 
 //Listener
 const PORT = process.env.PORT || 3000;
