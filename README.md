@@ -16,7 +16,7 @@ These screenshots show a quick sketch of what the app looks while the user navig
 ![FutbolReviews4U wireframe](images/WireFrame.png)
 
 ## Getting Started:
-[Click here](https://pick-your-poison1.vercel.app/) to check the app out! NEED TO CHANGE LINK
+[Click here](https://futbolreviews4u.herokuapp.com/) to check the app out!
 
 ## Future Enhacements:
 - The ability to have a filter option to look for a specific player.
